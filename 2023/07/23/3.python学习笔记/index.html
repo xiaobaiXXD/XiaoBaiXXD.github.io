@@ -24,7 +24,7 @@
 <meta property="og:description" content="Py学习笔记第一章1.输出：1print(666)    2.变量：格式：变量名称&#x3D;变量的值123money &#x3D; 100		money-&#x3D;10		print(money)  3.py中的数据类型string float int1234验证数据类型type()a&#x3D;10		print(type(a))  4.数据类型转换int(x)  float(x)  str(x)12str1&#x3D;str(1">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-23T13:29:13.020Z">
-<meta property="article:modified_time" content="2023-07-24T11:55:35.553Z">
+<meta property="article:modified_time" content="2023-07-24T12:03:34.979Z">
 <meta property="article:author" content="解忧">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -248,7 +248,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          816 字
+          812 字
         
       </span>
     
@@ -309,7 +309,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：1 分钟前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -345,15 +345,15 @@
 
 
 
-<h4 id="7-4字符串格式化方式1"><a href="#7-4字符串格式化方式1" class="headerlink" title="7-4字符串格式化方式1"></a>7-4<strong>字符串格式化方式</strong>1</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs routeros">%  占位符    s 将变量变成字符串放入占位的地方（像C语言里面的%d等<span class="hljs-built_in">..</span><span class="hljs-built_in">..</span>）<br><br><span class="hljs-attribute">Num</span>=10<br><br><span class="hljs-attribute">massage</span>=<span class="hljs-string">&quot;我是%d只小小的羊&quot;</span> % Num    #里面%d用%s也行<br><br><span class="hljs-built_in">print</span>(massage)<br></code></pre></td></tr></table></figure>
+<h4 id="7-4字符串格式化方式1"><a href="#7-4字符串格式化方式1" class="headerlink" title="7-4字符串格式化方式1"></a>7-4<strong>字符串格式化方式</strong>1</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs routeros"><span class="hljs-comment">#  %  占位符    s 将变量变成字符串放入占位的地方（像C语言里面的%d等....）</span><br><br><span class="hljs-attribute">Num</span>=10<br><br><span class="hljs-attribute">massage</span>=<span class="hljs-string">&quot;我是%d只小小的羊&quot;</span> % Num    #里面%d用%s也行<br><br><span class="hljs-built_in">print</span>(massage)<br></code></pre></td></tr></table></figure>
 
 
 
-<h4 id="7-5字符串的格式化过程中的精度控制"><a href="#7-5字符串的格式化过程中的精度控制" class="headerlink" title="7-5字符串的格式化过程中的精度控制"></a>7-5字符串的格式化过程中的精度控制</h4><figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs llvm">**使用辅助符号**m/.n*  如<span class="hljs-variable">%5</span>d：宽度为<span class="hljs-number">5</span>     <span class="hljs-variable">%5</span>.<span class="hljs-number">2</span>f:宽度为<span class="hljs-number">5</span>，精度为<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
+<h4 id="7-5字符串的格式化过程中的精度控制"><a href="#7-5字符串的格式化过程中的精度控制" class="headerlink" title="7-5字符串的格式化过程中的精度控制"></a>7-5字符串的格式化过程中的精度控制</h4><figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs llvm">使用辅助符号m/.n*  如<span class="hljs-variable">%5</span>d：宽度为<span class="hljs-number">5</span>     <span class="hljs-variable">%5</span>.<span class="hljs-number">2</span>f:宽度为<span class="hljs-number">5</span>，精度为<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h4 id="7-6字符串格式化方式2"><a href="#7-6字符串格式化方式2" class="headerlink" title="7-6字符串格式化方式2"></a>7-6<em><strong>字符串格式化方式</strong>2</em></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">*快速格式化  语法<span class="hljs-string">f&quot;内容<span class="hljs-subst">&#123;变量&#125;</span>&quot;</span>    (不管数据类型，不作精度控制) <br><br><span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;我是<span class="hljs-subst">&#123;Num&#125;</span>只小小的羊&quot;</span>)<br></code></pre></td></tr></table></figure>
+<h4 id="7-6字符串格式化方式2"><a href="#7-6字符串格式化方式2" class="headerlink" title="7-6字符串格式化方式2"></a>7-6<em><strong>字符串格式化方式</strong>2</em></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">快速格式化  语法<span class="hljs-string">f&quot;内容<span class="hljs-subst">&#123;变量&#125;</span>&quot;</span>    (不管数据类型，不作精度控制) <br><br><span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;我是<span class="hljs-subst">&#123;Num&#125;</span>只小小的羊&quot;</span>)<br></code></pre></td></tr></table></figure>
 
 
 
